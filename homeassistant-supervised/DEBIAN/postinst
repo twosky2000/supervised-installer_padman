@@ -6,11 +6,11 @@ function error { echo -e "\e[31m[error] $*\e[39m"; exit 1; }
 . /usr/share/debconf/confmodule
 ARCH=$(uname -m)
 
-BINARY_DOCKER=/usr/bin/docker
+BINARY_DOCKER=/usr/bin/podman
 
 DOCKER_REPO="ghcr.io/home-assistant"
 
-SERVICE_DOCKER="docker.service"
+SERVICE_DOCKER="podman.service"
 SERVICE_NM="NetworkManager.service"
 
 # Read infos from web
